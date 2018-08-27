@@ -1,0 +1,13 @@
+.content-wrapper, .right-side {
+    /* margin-left: 265px; */
+    min-height: 100%;
+    background-color: #ecf0f5;
+    z-index: 816;
+/*     min-height: 2000px !important; */ */
+}
+
+.small-square 
+{
+	width: 70px;
+}
+

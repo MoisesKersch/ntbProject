@@ -1,0 +1,19 @@
+
+table.dataTable thead th, table.dataTable thead td {
+   background-color: #3c8dbc !important;
+   color: white;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    background-color: white;
+}
+
+.background-ativo-green
+{
+	background-color: green !important;
+}
+
+.background-inativo-red
+{
+	background-color: red !important;
+}

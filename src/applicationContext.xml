@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="provider"/>
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory"/>
+	</bean>
+
+  	<mvc:annotation-driven/>
+
+	<context:annotation-config />
+
+	<bean id="UsuarioDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HUsuarioDao"/>
+	<bean id="RedeLinearDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HRedeLinearDao"/>
+	<bean id="ParceiroNegociosDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HParceiroNegociosDao"/>
+	<bean id="PacoteDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPacoteDao"/>
+	<bean id="RedeBinariaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HRedeBinariaDao"/>
+	<bean id="CadastroPendenteDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HCadastroPendenteDao"/>
+	<bean id="EnderecoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HEnderecoDao"/>
+	<bean id="ParceiroNegociosEnderecoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HParceiroNegociosEnderecoDao"/>
+	<bean id="SaqueDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HSaqueDao"/>
+	<bean id="PagamentoPendenteDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPagamentoPendenteDao"/>
+	<bean id="DocumentoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HDocumentoDao"/>
+	<bean id="MuralDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HMuralDao"/>
+	<bean id="SaldoResumidoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HSaldoResumidoDao"/>
+	<bean id="ExtratoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HExtratoDao"/>
+	<bean id="FinanceiroDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HFinanceiroDao"/>
+	<bean id="MeusPontosDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HMeusPontosDao"/>
+	<bean id="FranqueadoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HFranqueadoDao"/>
+	<bean id="ComprasDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HComprasDao"/>
+	<bean id="PacoteUpgradeDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPacoteUpgradeDao"/>
+	<bean id="PacoteUpgradeLinhaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPacoteUpgradeLinhaDao"/>
+	<bean id="TransferenciaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HTransferenciaDao"/>
+	<bean id="UsuarioReadDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HUsuarioReadDao"/>
+	<bean id="ArquivoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HArquivoDao"/>
+	<bean id="VoucherProdutoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HVoucherProdutoDao"/>
+	<bean id="VoucherDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HVoucherDao"/>
+	<bean id="ManutencaoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HManutencaoDao"/>
+	<bean id="AceiteDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAceiteDao"/>
+	<bean id="AtivoAgendaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAtivoAgendaDao"/>
+	<bean id="AtivoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAtivoDao"/>
+	<bean id="AtivoPeriodoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAtivoPeriodoDao"/>
+	<bean id="MetodoEntregaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HMetodoEntregaDao"/>
+	<bean id="FormaPagamentoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HFormaPagamentoDao"/>
+	<bean id="PreCompraDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPreCompraDao"/>
+	<bean id="PreCompraItemDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPreCompraItemDao"/>
+	<bean id="RedeConfigDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HRedeConfigDao"/>
+	<bean id="RedeParcelasDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HRedeParcelasDao"/>
+	<bean id="CarrinhoComprasDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HCarrinhoComprasDao"/>
+	<bean id="CarrinhoComprasItemDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HCarrinhoComprasItemDao"/>
+	<bean id="BancoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HBancoDao"/>
+	<bean id="GraduacaoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HGraduacaoDao"/>
+	<bean id="PacoteCategoriaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPacoteCategoriaDao"/>
+	<bean id="ConfigCorreiosDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HConfigCorreiosDao"/>
+	<bean id="HelpVideoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HHelpVideoDao"/>
+	<bean id="PreCompraClienteDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HPreCompraClienteDao"/>
+	<bean id="NovoEnderecoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HNovoEnderecoDao"/>
+	<bean id="AtivoStatusDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAtivoStatusDao"/>
+	<bean id="CarreiraStatusDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HCarreiraStatusDao"/>
+	<bean id="BannerDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HBannerDao"/>
+	<bean id="CapaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HCapaDao"/>
+	<bean id="AgendaContatoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAgendaContatoDao"/>
+	<bean id="ParametroDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HParametroDao"/>
+	<bean id="AgendaAcaoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAgendaAcaoDao"/>
+	<bean id="OrgInfoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HOrgInfoDao"/>
+	<bean id="ConfigDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HConfigDao"/>
+	<bean id="EnderecoViewDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HEnderecoViewDao"/>
+	<bean id="MetodoPagamentoPSDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HMetodoPagamentoPSDao"/>
+	<bean id="AmrLoginDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAmrLoginDao"/>
+	<bean id="DebtPaymentDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HDebtPaymentDao"/>
+	<bean id="NotificacaoPSDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HNotificacaoPSDao"/>
+	<bean id="CursoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HCursoDao"/>
+	<bean id="MatriculaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HMatriculaDao"/>
+	<bean id="AgendaDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAgendaDao"/>
+	<bean id="AtivacoesDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAtivacoesDao"/>
+	<bean id="AtivacoesLCTODao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HAtivacoesLCTODao"/>
+	<bean id="ComprasItemDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HComprasItemDao"/>
+	<bean id="ReuniaoDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HReuniaoDao"/>
+	<bean id="ReunioesDao" class="br.com.adaptaconsultoria.amr.persistence.jpa.HReunioesDao"/>
+
+</beans>

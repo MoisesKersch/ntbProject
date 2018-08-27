@@ -1,0 +1,115 @@
+.thumbnail:hover {
+   	box-shadow: 0 3px 3px 0 rgba(0,0,0,.4) !important;
+    opacity: 0.9 !important;
+    filter: alpha(opacity=80)  !important;
+    transition-delay: 0.5s
+}
+
+.imagemin-max
+{
+	max-width: 50% !important;
+	min-height: 150px !important;
+	max-height: 150px !important;
+	min-height: 150px !important;
+}
+
+.thumbnail
+{
+	padding-bottom:20px;
+	padding-top: 70px !important;
+	min-height: 462px !important;
+	border-radius: 0px !important;
+}
+
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #094C83;
+}
+
+.button-group
+{
+	padding-bottom: 3px !important;
+}
+
+.item-name
+{
+	margin-top: 24px !important;
+    color: #1e77ab !important;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-name:hover
+{
+	color: #8dc3e3 !important;
+}
+
+
+.caption:hover 
+{
+    opacity: 0.9 !important;
+    filter: alpha(opacity=80) !important;
+    max-height: 462px !important;
+}
+
+.imagemin-max
+{
+	max-width: 50% !important;
+	min-height: 150px !important;
+	max-height: 150px !important;
+	min-height: 150px !important;
+}
+.thumbnail
+{
+	padding-bottom:20px;
+	padding-top: 70px !important;
+	min-height: 462px !important;
+	border-radius: 0px !important;
+}
+
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #094C83;
+}
+
+.button-group
+{
+	padding-bottom: 3px !important;
+}
+
+.item-name
+{
+	margin-top: 24px !important;
+    color: #1e77ab !important;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.divmin
+{
+	min-height: 109px !important;
+}
+
+.item-name:hover
+{
+	color: #8dc3e3 !important;
+}
+
+.caption
+{
+	min-height: 225px !important;
+}
+
+.image-width-height
+{
+	min-height: 150px !important;
+}
+
+.thumbnail .caption {
+
+    word-wrap: break-word !important;
+}
+

@@ -1,0 +1,21 @@
+#agendacontato tbody tr.selected 
+{
+   color: #023146 !important;
+   background-color: #eeeeee !important;
+}
+
+#agenda tbody tr.selected 
+{
+   color: #023146 !important;
+   background-color: #eeeeee;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+   background-color: #3c8dbc;
+   color: white;
+}
+
+/* table.dataTable tbody th, table.dataTable tbody td { */
+/*     background-color: white; */
+/* } */
+

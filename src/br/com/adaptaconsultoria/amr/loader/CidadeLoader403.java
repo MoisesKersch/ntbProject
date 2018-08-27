@@ -1,0 +1,1 @@
+package br.com.adaptaconsultoria.amr.loader;import java.util.ArrayList;import java.util.List;import br.com.adaptaconsultoria.amr.model.Cidade;public class CidadeLoader403 {public static List<Cidade> getCidades(){List<Cidade> cidades = new ArrayList<Cidade>();cidades.add(new Cidade("14116AC5CE5E4CD5BBAFD47D5AA7E251","Brasília"));return cidades;}}

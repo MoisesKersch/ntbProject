@@ -1,0 +1,14 @@
+.passwordTooltip {
+    background: #3c8dbc !important;
+    color: #fff !important;
+    border: 3px solid #3c8dbc; 
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.box.box-primary
+{
+	background-color: #ebf3f8 !important;
+}

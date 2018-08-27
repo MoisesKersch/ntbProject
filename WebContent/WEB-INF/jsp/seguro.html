@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head id="Head1"><title>
+	REDECARD - Ambiente Seguro de Pagamento
+</title>
+
+		<script type="text/javascript">
+		    function getXmlHttpRequestObject() {	
+			    if (window.XMLHttpRequest) {		
+				    return new XMLHttpRequest(); 
+			    } 
+			    else if(window.ActiveXObject) {
+    			    return new ActiveXObject('Microsoft.XMLHTTP'); 
+			    }
+		    }
+
+		    function sendCloseNotifier() {
+
+			    var xmlReq = getXmlHttpRequestObject();
+
+			    if (xmlReq.readyState == 4 || xmlReq.readyState == 0) {
+				    xmlReq.open("GET", 'RetornoAbandonoPagina.aspx', true);
+				    xmlReq.send(null);
+			    }
+		    }			
+		</script>	
+		
+	</head>
+    <!-- Caso InIFrame = "S" escreve contéudo com iframe, senão, frame normal -->
+    <frameset rows='120,*' id='frmset' frameborder='NO' border='0' framespacing ='0' onbeforeunload='javascript:sendCloseNotifier();'>
+<frame src='UrlCima.aspx' name='topFrame' scrolling='no' noresize>
+<frame src='InformacoesCartaoVisa.aspx' name='principal' scrolling='no' noresize>
+</frameset>
+
+</html>

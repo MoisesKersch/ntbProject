@@ -1,0 +1,46 @@
+
+.skin-blue .main-header .navbar .dropdown-menu li a {
+    color: black !important;
+}
+
+
+.skin-blue .main-header .navbar .nav>li>a:hover, .skin-blue .main-header .navbar .nav>li>a:active, .skin-blue .main-header .navbar .nav>li>a:focus, .skin-blue .main-header .navbar .nav .open>a, .skin-blue .main-header .navbar .nav .open>a:hover, .skin-blue .main-header .navbar .nav .open>a:focus {
+    background: #3c8dbc !important;
+}
+
+.three-dots-for-avatar{
+    display:inline-block;
+    width:87px;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+.img-circle
+{
+	background-color:#085b8c;
+    width: 67px;
+    height: 67px;
+    margin-right: 10px;
+}
+
+#sair
+{
+	position: absolute;
+	top: 49%;
+    right: 10px;
+    color: white;
+    background-color: #8dc3e3;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: transform 5;
+}
+
+#sair:hover {
+	 
+    transform: scale(1);
+  }
+
+
+
+

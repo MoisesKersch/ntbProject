@@ -1,0 +1,4 @@
+.disable_a_href{
+    pointer-events: none;
+    **color:#c0c0c0 !important;**
+}
